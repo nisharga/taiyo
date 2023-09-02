@@ -1,9 +1,12 @@
+import { RouterProvider } from "react-router-dom"
+import { router } from "./router/route"
+
  
 
 function App() {
   return (
     <>
-       <h1 className="bg-red-500">Taiyo</h1>
+      <RouterProvider router={router}></RouterProvider>
     </>
   )
 }

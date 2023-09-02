@@ -1,29 +1,26 @@
  
 import { GrHomeRounded } from "react-icons/gr";
-import { RiProfileLine } from "react-icons/ri";
-import { BsCardList } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
-import { FaSearch } from "react-icons/fa";
+import { RiContactsBook2Fill } from "react-icons/ri";
+import { BsFillPieChartFill } from "react-icons/bs"; 
+import { FiMapPin } from "react-icons/fi";
+
 import CustomLinks from "../CustomLinks/CustomLinks";
 const BottomBar = () => {
   return (
-    <div className="fixed bottom-0 right-0 mt-4 md:hidden bg-slate-50 w-[100%]">
+    <div className="fixed bottom-0 right-0 mt-4 md:hidden bg-[#306793] w-[100%]">
         <div className="flex justify-center">
         <CustomLinks to="/">
-         <GrHomeRounded color="white"/>
+         <GrHomeRounded color="#B6B6B6"/>
          </CustomLinks>
-        <CustomLinks to="analisis">
-          <RiProfileLine color="#B6B6B6"/>
+        <CustomLinks to="contact">
+          <RiContactsBook2Fill color="#B6B6B6"/>
          </CustomLinks>
-         <CustomLinks to="overview">
-         <CgProfile color="#B6B6B6"/>
+         <CustomLinks to="chart">
+         <BsFillPieChartFill color="#B6B6B6"/>
          </CustomLinks>
-         <CustomLinks to="profile">
-         <BsCardList color="#B6B6B6"/>
-         </CustomLinks>
-         <CustomLinks to="search">
-            <FaSearch color="#B6B6B6"/>
-         </CustomLinks>
+         <CustomLinks to="map">
+          <FiMapPin color="#B6B6B6"/>
+         </CustomLinks> 
         </div>
     </div>
   )
